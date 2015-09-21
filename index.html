@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Quest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>TextQuest</h1>
+        <br>
+        <div id="gameSaveBox">
+            <button id="load">Load</button>
+            <button id="save">Save</button>
+            <span>"                                      "</span>
+            <button id="reset">Reset</button>
+            <input type="checkbox" id="reallyReset">
+        </div>
+
+
+        <div id="outerConsole" class="outerBox">
+            <div id= "innerConsole">
+                <p id="line1">-----</p>
+                <p id="line2">-----</p>
+                <p id="line3">-----</p>
+                <p id="line4">-----</p>
+                <p id="line5">-----</p>
+                <p id="line6">-----</p>
+                <p id="line7">TextQuest</p>
+                <p id="line8">v. Alpha</p>
+                <p id="line9">Author: Worms</p>
+                <p id="line10">-----</p>
+            </div>
+        </div>
+
+        <div id="gui">
+            <div id="gameStanceOuter">
+                <p>Game Stance:
+                    <select id="gameStance">
+                        <option value="idle">Idle</option>
+                        <option value="combat">Combat</option>
+                    </select>
+                </p>
+            </div>
+
+            <div id="charInfo">
+                <p>Energy: <span id="gameEnergy">0</span> / <span id="gameMaxEnergy">30</span></p>
+                <br>
+                <p>Level: <span id="gameLevel">1</span> (<span id="gameExp">0</span>/<span id="gameExpToLevel">10</span>)</p>
+                <br>
+                <p>HP: <span id="gameHp">10</span> / <span id="gameMaxHp">10</span></p>
+                <br>
+                <p>Strength: <span id="gameStr">1</span></p>
+                <p>Agility: <span id="gameAgi">1</span></p>
+                <p>Luck: <span id="gameLuck">1</span></p>
+            </div>
+
+
+        </div>
+
+        <script src="game.js"></script>
+
+    </body>
+</html>
