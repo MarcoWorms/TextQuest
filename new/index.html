@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Quest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>TextQuest</h1>
+        <br>
+        <div id="gameSaveBox">
+            <button id="load">Load</button>
+            <button id="save">Save</button>
+            <span>"                                      "</span>
+            <button id="reset">Reset</button>
+            <input type="checkbox" id="reallyReset">
+        </div>
+
+
+        <div id="outerConsole" class="outerBox">
+            <div id= "innerConsole">
+                <p id="line1">-----</p>
+                <p id="line2">-----</p>
+                <p id="line3">-----</p>
+                <p id="line4">-----</p>
+                <p id="line5">-----</p>
+                <p id="line6">-----</p>
+                <p id="line7">TextQuest</p>
+                <p id="line8">v. Alpha</p>
+                <p id="line9">Author: Worms</p>
+                <p id="line10">-----</p>
+            </div>
+        </div>
+
+        <div id="gui">
+            <div id="gameStanceOuter">
+                <p>Game Stance:
+                    <select id="gameStance" class="inputField">
+                        <option value="idle">Idle</option>
+                        <option value="combat">Combat</option>
+                    </select>
+                </p>
+            </div>
+
+            <div id="charInfo">
+                <p>Energy: <span class="outputField" id="energy">0</span> / <span class="outputField" id="maxEnergy">30</span></p>
+                <br>
+                <p>Level: <span class="outputField" id="level">1</span> (<span class="outputField" id="exp">0</span>/<span class="outputField" id="expToLevel">10</span>)</p>
+                <br>
+                <p>HP: <span class="outputField" id="hp">10</span> / <span class="outputField" id="maxHp">10</span></p>
+                <br>
+                <p>Strength: <span class="outputField" id="str">1</span></p>
+                <p>Agility: <span class="outputField" id="agi">1</span></p>
+                <p>Luck: <span class="outputField" id="luk">1</span></p>
+            </div>
+
+
+        </div>
+
+        <script src="game.js"></script>
+
+    </body>
+</html>
